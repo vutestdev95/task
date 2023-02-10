@@ -1,0 +1,12 @@
+scalar JSON
+type EZShipResponse {
+  EZShipId: String
+}
+
+type Mutation {
+  getEzShip(input: EzShipInput!): [EZShipResponse]
+}
+
+input EzShipInput {
+  UserGUID: String!
+}

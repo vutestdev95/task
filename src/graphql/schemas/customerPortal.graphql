@@ -1,0 +1,99 @@
+type GetCustomerInfoResponse {
+  status: String
+  statusdescription: String
+  Service: String
+  Caller: String
+  CallerPhone: String
+  CallerEmail: String
+  PName: String
+  PAddress: String
+  PCity: String
+  PState: String
+  PZip: String
+  PCountry: String
+  PRoom: String
+  PSee: String
+  PPhone: String
+  PNote: String
+  DName: String
+  DAddress: String
+  DCity: String
+  DState: String
+  DZip: String
+  DCountry: String
+  DRoom: String
+  DSee: String
+  DPhone: String
+  DNote: String
+  Description: String
+  Pieces: String
+  Weight: String
+  DeclaredValue: String
+  PackageTypeID: String
+  Notes: String
+  VehicleTypeID: String
+  CustomerID: String
+  NotifyMeEmail: String
+  NotifyMeWhen: String
+  NotifyRecipientEmail: String
+  NotifyRecipientWhen: String
+  Notify3rdPartyEmail: String
+  Notify3rdPartyWhen: String
+  BillingType: String
+  PResidence: String
+  DResidence: String
+  PCustomerShipToCode: String
+  PAddToAddress: String
+  DAddToAddress: String
+  DCustomerShipToCode: String
+  CallerLookup: String
+  RemotePieceDetail: String
+  reqDRoom: String
+  reqDSee: String
+  reqDPhone: String
+  DisableOrderEntry: String
+  RemotePickupPrompt: String
+  admin: String
+  RequirePieceType: String
+  ScaleMachine: String
+  ScaleDevice: String
+  DueTimeEntry: String
+  ReadyTimeUnassigned: String
+  RemotePieceContainer: String
+  OrderReferences: OrderReferences
+  VehicleTypes: [VehicleType]
+  ServiceTypes: [ServiceType]
+  PackageTypes: [PackageType]
+  NotifyEvents: [NotifyEvent]
+}
+
+type OrderReferences {
+  Reference: String
+  BLAlias: String
+  Other: String
+  Invoice: String
+}
+
+type VehicleType {
+  VehicleValue: String
+  VehicleName: String
+}
+
+type ServiceType {
+  ServiceValue: String
+  ServiceName: String
+}
+
+type PackageType {
+  PackageValue: String
+  PackageName: String
+}
+
+type NotifyEvent {
+  NotifyValue: String
+  NotifyName: String
+}
+
+type Query {
+  GetCustomerInfo: GetCustomerInfoResponse
+}

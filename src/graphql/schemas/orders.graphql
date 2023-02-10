@@ -1,0 +1,25 @@
+type SearchOrderResponse {
+  Order: JSON
+  statusdescription: String
+  status: String
+}
+
+type Query {
+  searchOrder(input: SearchOrderInput!): SearchOrderResponse
+}
+
+input SearchOrderInput {
+  OrderNumber: String
+  OrderStatus: String
+  Service: String
+  PackageTypeID: String
+  LocationTypeID: String
+  Layout: String
+  CustomerCode: String
+  CreateUserName: String
+  Reference: String
+  Address: String
+  PackageSize: String
+  SupplierAccountID: String
+  Completed: Boolean
+}

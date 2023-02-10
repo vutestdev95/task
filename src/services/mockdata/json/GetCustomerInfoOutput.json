@@ -1,0 +1,229 @@
+{
+  "status": null,
+  "statusdescription": null,
+  "Service": "Direct    ",
+  "Caller": "Test Mctester",
+  "CallerPhone": "111-222-3344",
+  "CallerEmail": "Test@e-courier.com",
+  "PName": "Test Account",
+  "PAddress": "123 Main Street",
+  "PCity": "Houston",
+  "PState": "TX",
+  "PZip": "77002",
+  "PCountry": "USA",
+  "PRoom": "",
+  "PSee": "",
+  "PPhone": "",
+  "PNote": "",
+  "DName": "",
+  "DAddress": "",
+  "DCity": "",
+  "DState": "0",
+  "DZip": "",
+  "DCountry": "USA",
+  "DRoom": "",
+  "DSee": "",
+  "DPhone": "",
+  "DNote": "",
+  "Description": "",
+  "Pieces": "1",
+  "Weight": "1",
+  "DeclaredValue": "50.0000",
+  "PackageTypeID": "0",
+  "Notes": "",
+  "VehicleTypeID": "5",
+  "CustomerID": "10017",
+  "NotifyMeEmail": "",
+  "NotifyMeWhen": "10",
+  "NotifyRecipientEmail": "",
+  "NotifyRecipientWhen": "10",
+  "Notify3rdPartyEmail": "",
+  "Notify3rdPartyWhen": "10",
+  "BillingType": "0",
+  "PResidence": "1",
+  "DResidence": "1",
+  "PCustomerShipToCode": "BudTest",
+  "PAddToAddress": "0",
+  "DAddToAddress": "0",
+  "DCustomerShipToCode": "",
+  "CallerLookup": "0",
+  "RemotePieceDetail": "0",
+  "reqDRoom": "0",
+  "reqDSee": "0",
+  "reqDPhone": "0",
+  "DisableOrderEntry": "0",
+  "RemotePickupPrompt": "0",
+  "admin": "7",
+  "RequirePieceType": "0",
+  "ScaleMachine": "0",
+  "ScaleDevice": "0",
+  "DueTimeEntry": "0",
+  "ReadyTimeUnassigned": "0",
+  "RemotePieceContainer": "0",
+  "OrderReferences": {
+    "Reference": "",
+    "BLAlias": "",
+    "Other": "TODO",
+    "Invoice": "TODO"
+  },
+  "VehicleTypes": [
+    {
+      "VehicleValue": "2",
+      "VehicleName": "Walker/Runner"
+    },
+    {
+      "VehicleValue": "3",
+      "VehicleName": "Bicycle"
+    },
+    {
+      "VehicleValue": "4",
+      "VehicleName": "Motorcycle"
+    },
+    {
+      "VehicleValue": "5",
+      "VehicleName": "Car"
+    },
+    {
+      "VehicleValue": "6",
+      "VehicleName": "Wagon"
+    },
+    {
+      "VehicleValue": "8",
+      "VehicleName": "Mid Sz P/U"
+    },
+    {
+      "VehicleValue": "9",
+      "VehicleName": "Mid Sz Cov P/U"
+    },
+    {
+      "VehicleValue": "10",
+      "VehicleName": "SUV"
+    },
+    {
+      "VehicleValue": "11",
+      "VehicleName": "MiniVan"
+    },
+    {
+      "VehicleValue": "12",
+      "VehicleName": "Full Sz P/U"
+    },
+    {
+      "VehicleValue": "13",
+      "VehicleName": "CityVan"
+    },
+    {
+      "VehicleValue": "15",
+      "VehicleName": "Cargo Van"
+    },
+    {
+      "VehicleValue": "20",
+      "VehicleName": "TransitVan"
+    },
+    {
+      "VehicleValue": "25",
+      "VehicleName": "Cube Van"
+    },
+    {
+      "VehicleValue": "30",
+      "VehicleName": "StraightTruck"
+    },
+    {
+      "VehicleValue": "35",
+      "VehicleName": "FlatBed"
+    },
+    {
+      "VehicleValue": "40",
+      "VehicleName": "Trctr_Trlr"
+    }
+  ],
+  "ServiceTypes": [
+    {
+      "ServiceValue": "Direct    ",
+      "ServiceName": "Direct"
+    },
+    {
+      "ServiceValue": "Regular   ",
+      "ServiceName": "Regular"
+    },
+    {
+      "ServiceValue": "Route     ",
+      "ServiceName": "Route"
+    },
+    {
+      "ServiceValue": "Dist      ",
+      "ServiceName": "Dist"
+    },
+    {
+      "ServiceValue": "Appointmnt",
+      "ServiceName": "Appointmnt"
+    },
+    {
+      "ServiceValue": "SameDay   ",
+      "ServiceName": "Same Day"
+    },
+    {
+      "ServiceValue": "NextDay   ",
+      "ServiceName": "NextDay"
+    },
+    {
+      "ServiceValue": "Warehouse ",
+      "ServiceName": "Warehouse"
+    }
+  ],
+  "PackageTypes": [
+    {
+      "PackageValue": "1",
+      "PackageName": "Env"
+    },
+    {
+      "PackageValue": "2",
+      "PackageName": "Pouch"
+    },
+    {
+      "PackageValue": "3",
+      "PackageName": "Roll"
+    },
+    {
+      "PackageValue": "4",
+      "PackageName": "Box"
+    },
+    {
+      "PackageValue": "5",
+      "PackageName": "Skid"
+    },
+    {
+      "PackageValue": "6",
+      "PackageName": "OvrSzSkid"
+    },
+    {
+      "PackageValue": "7",
+      "PackageName": "MixPcs"
+    },
+    {
+      "PackageValue": "9",
+      "PackageName": "OnHold"
+    }
+  ],
+  "NotifyEvents": [
+    {
+      "NotifyValue": "8",
+      "NotifyName": "Created"
+    },
+    {
+      "NotifyValue": "103",
+      "NotifyName": "Deleted"
+    },
+    {
+      "NotifyValue": "10",
+      "NotifyName": "Delivered"
+    },
+    {
+      "NotifyValue": "9",
+      "NotifyName": "Pickedup"
+    },
+    {
+      "NotifyValue": "106",
+      "NotifyName": "RefuseDel"
+    }
+  ]
+}

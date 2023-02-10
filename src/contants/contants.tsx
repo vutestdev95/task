@@ -1,0 +1,37 @@
+import { Icon } from "@blueprintjs/core";
+
+export const DEFAULT_ZOOOM = 8;
+export const CENTER = {
+  lat: 29.7609,
+  lng: -95.3625,
+};
+export const EmailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+export const GoogleApiKey = "AIzaSyD6cEM1i3rSdP9CrHADl5giN8WOriKR13U";
+export const URL_GOOGLE_KEY = `https://maps.googleapis.com/maps/api/js?key=${GoogleApiKey}&v=3.exp&libraries=geometry,drawing,places`;
+export const fakeData = [{ id: "16348" }, { id: "16347" }, { id: "16347" }];
+
+export const renderIcon = (status: string) => {
+  switch (status) {
+    case "P":
+      return <Icon data-testid="arrow_up" icon="arrow-up" />;
+    case "D":
+      return <Icon icon="arrow-down" />;
+    default:
+      return <Icon icon="swap-vertical" />;
+  }
+};
+export const headerColumnsAction = [
+  { isSort: false, text: "Order #" },
+  { isSort: false, text: "Status" },
+  { isSort: false, text: "Dispatched" },
+  { isSort: false, text: "Due by" },
+  { isSort: false, text: "ETA" },
+  { isSort: false, text: "Action" },
+];
+export const headerColumnsNoAction = [
+  { isSort: false, text: "Order #" },
+  { isSort: false, text: "Status" },
+  { isSort: false, text: "Dispatched" },
+  { isSort: false, text: "Due by" },
+  { isSort: false, text: "ETA" },
+];

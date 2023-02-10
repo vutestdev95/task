@@ -1,0 +1,121 @@
+import STATES from "../place-order/stops-section/StopItem/states.json";
+export const convertedStatesOption = STATES.map((state) => ({
+  label: state.name,
+  value: state.code,
+}));
+export const FormAddress = [
+  [
+    {
+      key: "CompanyName",
+      dataTestid: "address-company-name",
+      label: "Company name",
+      placeholder: "e.g. John Smith",
+      value: "",
+      type: "input",
+      scaleSpan: 12,
+      isRequired: true,
+    },
+    {
+      key: "Phone",
+      dataTestid: "address-contact",
+      label: "Contact",
+      placeholder: "e.g. 281-259-2402",
+      value: "",
+      type: "input",
+    },
+  ],
+  [
+    {
+      key: "StreetAddress",
+      dataTestid: "address-street-address",
+      label: "Street address",
+      placeholder: "e.g. 2700 Greens Rd",
+      type: "input",
+      scaleSpan: 24,
+      isRequired: true,
+    },
+  ],
+  [
+    {
+      key: "MoreAddress",
+      dataTestid: "address-apartment",
+      label: "Apartment, Suite, Building",
+      placeholder: "e.g. Door 27, Floor 4",
+      value: "",
+      type: "input",
+      scaleSpan: 24,
+    },
+  ],
+  [
+    {
+      key: "Country",
+      dataTestid: "address-country",
+      label: "Country",
+      placeholder: "",
+      value: "USA",
+      type: "input",
+      isDisable: true,
+    },
+    {
+      key: "State",
+      dataTestid: "address-state",
+      options: convertedStatesOption,
+      label: "State",
+      placeholder: "Choose a state",
+      type: "selection",
+      scaleSpan: 12,
+      isRequired: true,
+    },
+  ],
+  [
+    {
+      key: "City",
+      dataTestid: "address-city",
+      label: "City",
+      placeholder: "Choose a city",
+      value: "",
+      scaleSpan: 12,
+      isRequired: true,
+    },
+    {
+      key: "PostalCode",
+      dataTestid: "address-postal-code",
+      label: "Postal Code",
+      placeholder: "e.g. SC456",
+      value: "",
+      type: "input",
+      scaleSpan: 12,
+      isRequired: true,
+    },
+  ],
+  [
+    {
+      key: "EmailAddress",
+      dataTestid: "address-email",
+      label: "Email",
+      placeholder: "e.g. johnsmith@example.com",
+      value: "",
+      type: "input",
+      scaleSpan: 12,
+    },
+    {
+      key: "Fax",
+      dataTestid: "address-fax",
+      label: "Fax",
+      placeholder: "e.g. 281-259-2402",
+      value: "",
+      scaleSpan: 12,
+    },
+  ],
+  [
+    {
+      key: "checkShipping",
+      dataTestid: "address-checkbox-default-shipping",
+      label: "Set as default Shipping Address for account",
+      placeholder: "",
+      value: true,
+      type: "checkbox",
+      scaleSpan: 24,
+    },
+  ],
+];
